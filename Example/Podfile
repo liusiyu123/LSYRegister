@@ -4,7 +4,8 @@ platform :ios, '9.0'
 
 target 'LSYRegister_Example' do
   pod 'LSYRegister', :path => '../'
-
+  pod 'LSYLogin', :path => '../../LSYLogin'
+  
   target 'LSYRegister_Tests' do
     inherit! :search_paths
 

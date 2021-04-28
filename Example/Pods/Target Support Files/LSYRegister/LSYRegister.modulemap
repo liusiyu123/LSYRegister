@@ -1,0 +1,6 @@
+framework module LSYRegister {
+  umbrella header "LSYRegister-umbrella.h"
+
+  export *
+  module * { export * }
+}

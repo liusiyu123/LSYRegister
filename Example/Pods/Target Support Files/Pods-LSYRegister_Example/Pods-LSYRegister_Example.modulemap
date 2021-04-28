@@ -1,0 +1,6 @@
+framework module Pods_LSYRegister_Example {
+  umbrella header "Pods-LSYRegister_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

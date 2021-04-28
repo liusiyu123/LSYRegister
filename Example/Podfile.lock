@@ -1,0 +1,22 @@
+PODS:
+  - LSYLogin (0.3.0)
+  - LSYRegister (0.1.0):
+    - LSYLogin
+
+DEPENDENCIES:
+  - LSYLogin (from `../../LSYLogin`)
+  - LSYRegister (from `../`)
+
+EXTERNAL SOURCES:
+  LSYLogin:
+    :path: "../../LSYLogin"
+  LSYRegister:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LSYLogin: e1c89a82e161255e49259495ac451b8e1bd9e6d0
+  LSYRegister: d071e8338fff0f1e386dc3546ddd918c03ba9100
+
+PODFILE CHECKSUM: 473245869bd5e974c631a80945a2bcba26e79515
+
+COCOAPODS: 1.10.1

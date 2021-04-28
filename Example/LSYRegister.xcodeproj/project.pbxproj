@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0AED5A7AC0F7E7A266FAF3DE /* Pods-LSYRegister_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSYRegister_Example.release.xcconfig"; path = "Target Support Files/Pods-LSYRegister_Example/Pods-LSYRegister_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1B00AF9B8D5692388656D730 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1B00AF9B8D5692388656D730 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LSYRegister_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSYRegister_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,13 +59,13 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7D5D3C703C0E597AC50BE297 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7D5D3C703C0E597AC50BE297 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		81E716E2D518FA479289D95C /* Pods-LSYRegister_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSYRegister_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LSYRegister_Tests/Pods-LSYRegister_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		869406894C562BC8DF42AECD /* Pods-LSYRegister_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSYRegister_Tests.release.xcconfig"; path = "Target Support Files/Pods-LSYRegister_Tests/Pods-LSYRegister_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A22C3D08DA598282EEE1B8FC /* Pods_LSYRegister_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSYRegister_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B821B1B75CB52A1897D12EAA /* Pods-LSYRegister_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSYRegister_Example.debug.xcconfig"; path = "Target Support Files/Pods-LSYRegister_Example/Pods-LSYRegister_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CB1340F5786CFAB6DA152CCE /* LSYRegister.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LSYRegister.podspec; path = ../LSYRegister.podspec; sourceTree = "<group>"; };
+		CB1340F5786CFAB6DA152CCE /* LSYRegister.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSYRegister.podspec; path = ../LSYRegister.podspec; sourceTree = "<group>"; };
 		E3A3EBE7B0E997167FBEF347 /* Pods_LSYRegister_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSYRegister_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				81E716E2D518FA479289D95C /* Pods-LSYRegister_Tests.debug.xcconfig */,
 				869406894C562BC8DF42AECD /* Pods-LSYRegister_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LSYRegister_Example/Pods-LSYRegister_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LSYLogin/LSYLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/LSYRegister/LSYRegister.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSYLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSYRegister.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

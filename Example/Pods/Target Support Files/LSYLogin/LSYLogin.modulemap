@@ -1,0 +1,6 @@
+framework module LSYLogin {
+  umbrella header "LSYLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
